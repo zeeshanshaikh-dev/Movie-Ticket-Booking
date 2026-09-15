@@ -4,15 +4,15 @@ A beginner-friendly movie ticket booking system built using Python and Object-Or
 
 ## 📌 Features
 
-- Store movie information
-- Set total number of seats
-- Set ticket price
-- Book multiple tickets
-- Check seat availability
-- Display booking status
-- Calculate total ticket price
-- Validate invalid ticket quantities
-- Prevent invalid seat counts and ticket prices
+- Display an interactive main menu
+- Book multiple movie tickets
+- Check available seats
+- Display movie booking status
+- Calculate the total ticket price
+- Validate ticket quantities
+- Prevent booking more tickets than available
+- Validate total seats and ticket price
+- Exit the application through the main menu
 
 ## 🛠️ Concepts Used
 
@@ -24,6 +24,7 @@ A beginner-friendly movie ticket booking system built using Python and Object-Or
 - Methods
 - Type Hints
 - Conditional Statements
+- `while` Loops
 - Input Validation
 - Exception Handling
 - Basic State Management
@@ -31,7 +32,7 @@ A beginner-friendly movie ticket booking system built using Python and Object-Or
 ## ▶️ How to Run
 
 1. Clone this repository.
-2. Open the project folder.
+2. Open the project folder in your terminal.
 3. Run the Python file:
 
 ```bash
