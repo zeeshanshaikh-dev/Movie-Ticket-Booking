@@ -36,7 +36,7 @@ class Movie:
             # Calculate the total cost.
             total_price = self.ticket_price * num_of_tickets
 
-            print("Your tickets have been booked successfully!")
+            print("\nYour tickets have been booked successfully!")
             print(f"Number of Tickets = {num_of_tickets}")
             print(f"Total Price = ₹{total_price}")
 
@@ -57,8 +57,31 @@ class Movie:
 # Create a movie object.
 movie = Movie("Spiderman: Brand New Day", 100, 499)
 
-# Book tickets.
-movie.book_tickets(6)
 
-# Display the current booking status.
-movie.show_status()
+# Main menu.
+while True:
+    print("\n========== MOVIE TICKET BOOKING SYSTEM ==========")
+    print("1. Book Tickets")
+    print("2. Show Movie Status")
+    print("3. Exit")
+
+    # Ask the user to select an option.
+    choice = input("Enter your choice: ")
+
+    # Book tickets.
+    if choice == "1":
+        num_of_tickets = int(input("Enter number of tickets: "))
+        movie.book_tickets(num_of_tickets)
+
+    # Display movie status.
+    elif choice == "2":
+        movie.show_status()
+
+    # Exit the program.
+    elif choice == "3":
+        print("\nThank you for using the Movie Ticket Booking System!")
+        break
+
+    # Handle invalid menu choices.
+    else:
+        print("Invalid choice. Please select 1, 2, or 3.")
